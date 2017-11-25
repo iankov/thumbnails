@@ -1,0 +1,19 @@
+{
+    "name": "iankov/thumbnails",
+    "description": "Automatic thumbnail creation",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Dmitriy Yankov",
+            "email": "incoming@ukr.net"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Iankov\\Thumbnails\\ServiceProvider"
+            ]
+        }
+    }
+}
