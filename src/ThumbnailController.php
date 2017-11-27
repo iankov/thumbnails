@@ -95,7 +95,13 @@ class ThumbnailController extends Controller
         }
 
         $src = imagecreatefromstring($imageData);
+
+        //make transparent image
         $dst = imagecreatetruecolor($newWidth, $newHeight);
+        imagealphablending($dst, false);
+        imagesavealpha($dst, true);
+        $transparent = imagecolorallocatealpha($dst, 255, 255, 255, 127);
+        imagefilledrectangle($dst, 0, 0, $width, $height, $transparent);
 
         imagecopyresampled(
             $dst,
