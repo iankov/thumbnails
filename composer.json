@@ -9,6 +9,16 @@
         }
     ],
     "require": {},
+    "autoload": {
+        "psr-4": {
+            "Iankov\\Thumbnails\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php artisan vendor:publish --tag=thumbnail_config"
+        ]
+    },
     "extra": {
         "laravel": {
             "providers": [
