@@ -25,6 +25,8 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function register()
     {
+        $this->mergeConfigFrom(__DIR__ . '/config/thumbnails.php', 'thumbnails');
+
         include __DIR__.'/helpers.php';
 
         if(config('thumbnails.use_package_routes')) {
