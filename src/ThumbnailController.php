@@ -46,6 +46,7 @@ class ThumbnailController extends Controller
                 break;
         }
 
+        header('HTTP/1.1 200 OK');
         header('Content-type: image/jpeg');
         imagejpeg($imageResource);
         imagedestroy($imageResource);
