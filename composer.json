@@ -14,6 +14,11 @@
             "Iankov\\Thumbnails\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Iankov\\Thumbnails\\Tests\\": "tests/"
+        }
+    },
     "scripts": {
         "post-install-cmd": [
             "php artisan vendor:publish --tag=thumbnail_config"
