@@ -2,6 +2,8 @@
 
 namespace Iankov\Thumbnails\Tests;
 
+require_once 'TestCase.php';
+
 class ThumbnailTest extends TestCase
 {
     protected $sizes = [
