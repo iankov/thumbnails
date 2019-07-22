@@ -1,6 +1,6 @@
 <?php
 
-Route::get('/{dir}/{width}x{height}x{crop}/{filename}', '\Iankov\Thumbnails\ThumbnailController@get')
+Route::get('/{dir}/{width}x{height}x{crop}/{filename}', '\Iankov\Thumbnails\Controllers\ThumbnailController@get')
     ->where([
         //'dir' => 'article\/images\/[0-9a-zA-Z\-\_\.]+',
         'dir' => '[A-Za-z0-9_\-\.\s\/]+',

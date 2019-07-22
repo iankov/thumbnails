@@ -2,10 +2,7 @@
 
 return [
     'create_folder_mode' => 0755,
-    'quality' => [
-        'jpeg' => 90, //Ranges from 0 (worst quality, smaller file) to 100 (best quality, biggest file)
-        'png' => 6, //Compression level: from 0 (no compression) to 9.
-    ],
+    'quality' => 90, //Ranges from 0 (worst quality, smaller file) to 100 (best quality, biggest file)
 
     //regex for allowed image directories
     'dirs' => [

@@ -1,6 +1,6 @@
 <?php
 
-namespace Iankov\Thumbnails;
+namespace Iankov\Thumbnails\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
